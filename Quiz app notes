@@ -8,6 +8,7 @@ On click on specific div -
 	- Provide a next question option
 	- Display if you answered correctly or not
 	- Append the score of your answers somewhere on the page
+	- Get content into an array that changes
 
 Strategy 
 	- Start by experimenting with showing and hiding specific text in boxes
@@ -19,5 +20,6 @@ First test
 	- onclick answer option 1 - change "question" to "answer" using "addclass"
 
 Create object
-	-Properties of the question object - question content, answers
+	- properties of the question object - question content, answers
 	- constructor function
+

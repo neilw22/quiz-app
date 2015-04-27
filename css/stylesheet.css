@@ -51,3 +51,28 @@ h2 {
 	margin: 2em;
 	padding-left: 1em;
 }
+
+.answer {
+	display: none;
+	position: absolute;
+	left: 25%;
+	/*bottom: 25%;*/
+	float: left;
+	width: 50%;
+	height: 30em;
+	background-color: black;
+	color: white;
+}
+
+#answer-closer {
+	position: relative;
+	text-align: center;
+	border: 1px solid white;
+	width: 25%;
+	margin: auto;
+}
+
+#answer-correct,
+#answer-incorrect {
+	display: none;
+}
