@@ -1,0 +1,23 @@
+
+Quiz App Notes
+
+On click on specific div - 
+
+	- Show correct answer information
+	- Hide everything else
+	- Provide a next question option
+	- Display if you answered correctly or not
+	- Append the score of your answers somewhere on the page
+
+Strategy 
+	- Start by experimenting with showing and hiding specific text in boxes
+	- Review the object oriented JS
+	- Style and add images at the very end
+
+First test
+
+	- onclick answer option 1 - change "question" to "answer" using "addclass"
+
+Create object
+	-Properties of the question object - question content, answers
+	- constructor function
