@@ -56,7 +56,7 @@ h2 {
 	display: none;
 	position: absolute;
 	left: 25%;
-	/*bottom: 25%;*/
+	top: 25%;
 	float: left;
 	width: 50%;
 	height: 30em;
@@ -70,9 +70,4 @@ h2 {
 	border: 1px solid white;
 	width: 25%;
 	margin: auto;
-}
-
-#answer-correct,
-#answer-incorrect {
-	display: none;
 }

@@ -30,18 +30,24 @@ var q4 = ["this is question 4" , "q4-opt1" , "q4-opt2" , "q4-opt3" , "q4-opt4"];
 var q5 = ["this is question 5" , "q5-opt1" , "q5-opt2" , "q5-opt3" , "q5-opt4"];
 
 $(".a").click(function(){
-	if (document.getElementById('answer1').onclick==true) {
+	answer();
+});
+
+$("#answer1").click(function(){
+	if (nextQ === 2) {
+		$("#answer-incorrect").hide();
 		$("#answer-correct").show();
 	} else {
-		$("answer-incorrect").show();
+		$("#answer-correct").hide();
+		$("#answer-incorrect").show();
 	}
-	answer();
 });
 
 $("#answer-closer").click(function(){
 	$('.answer').hide();
-})
+});
 
+console.log(nextQ);
 
 
 });
