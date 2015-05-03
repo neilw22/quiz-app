@@ -31,6 +31,7 @@ var q5 = ["this is question 5" , "q5-opt1" , "q5-opt2" , "q5-opt3" , "q5-opt4"];
 
 $(".a").click(function(){
 	answer();
+	$('.overlay').show();
 });
 
 $("#answer1").click(function(){
@@ -45,6 +46,7 @@ $("#answer1").click(function(){
 
 $("#answer-closer").click(function(){
 	$('.answer').hide();
+	$('.overlay').hide();
 });
 
 console.log(nextQ);

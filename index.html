@@ -3,33 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<title>Quiz App</title>
 </head>
 <body>
-	<h1>Quiz App</h1>
 		<div class="content">
-			<div class="question-panel">
-				<h2>Question <span id="question-number">1</span></h2>
-					<div class="image-box"></div>
-					<div class="question-box">
-						<p id="q-content">Here is where the question go</p>
+			<h1>Quiz App</h1>
+				<div class="question-panel">
+					<h2>Question <span id="question-number">1</span></h2>
+						<div class="image-box"></div>
+						<div class="question-box">
+							<p id="q-content">Here is where the question go</p>
+						</div>
+				</div>
+				<div class="answer-panel">
+					<h2 id="feedback-panel">Choose the best answer</h2>
+						<div class="ans" id="answer1"><p id="a1-content">Option 1</p></div>
+						<div class="ans" id="answer2"><p id="a2-content">Option 2</p></div>
+						<div class="ans" id="answer3"><p id="a3-content">Option 3</p></div>
+						<div class="ans" id="answer4"><p id="a4-content">Option 4</p></div>
+				</div>
+					<div class="answer">
+						<h1 id="answer-correct">Correct!</h1>
+						<h1 id="answer-incorrect">In fact...</h1>
+						<h1 id="quiz-end">Thanks for doing the quiz</h1>
+						<h2>This is where the correct answer could display</h2>
+						<div id="answer-closer"><p>Okay!</p></div>
+						<div id="quiz-reset"><p>Go Again?</p></div>
 					</div>
+				<div class="overlay"></div>
 			</div>
-			<div class="answer-panel">
-				<h2 id="feedback-panel">Choose the best answer</h2>
-					<div class="a" id="answer1"><p id="a1-content">Option 1</p></div>
-					<div class="a" id="answer2"><p id="a2-content">Option 2</p></div>
-					<div class="a" id="answer3"><p id="a3-content">Option 3</p></div>
-					<div class="a" id="answer4"><p id="a4-content">Option 4</p></div>
-			</div>
-			<div class="answer">
-				<h1 id="answer-correct">Correct!</h1>
-				<h1 id="answer-incorrect">In fact...</h1>
-				<h2>This is where the correct answer could display</h2>
-				<div id="answer-closer"><p>Okay!</p></div>
-			</div>
-		</div>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/app01.js"></script>
 </body>
+
 </html>

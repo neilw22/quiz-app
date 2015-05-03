@@ -7,6 +7,17 @@ h2 {
 	text-align: center;
 }
 
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+ 	display: none;	
+	width: 100%;
+	height: 100%;
+	background-color: darkgrey;
+	opacity: 0.4;
+}
+
 .question-panel {
 	border: 1px solid;
 	margin-top: 5em;
@@ -62,6 +73,7 @@ h2 {
 	height: 30em;
 	background-color: black;
 	color: white;
+	z-index: 99999;
 }
 
 #answer-closer {
@@ -71,3 +83,18 @@ h2 {
 	width: 25%;
 	margin: auto;
 }
+
+#quiz-reset {
+	display: none;
+	position: relative;
+	text-align: center;
+	border: 1px solid white;
+	width: 25%;
+	margin: auto;
+}
+
+
+#quiz-end {
+	display: none;
+}
+
