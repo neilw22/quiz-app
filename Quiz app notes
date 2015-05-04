@@ -3,7 +3,7 @@ Quiz App Notes
 
 On click on specific div - 
 
-	- Show correct answer information
+	- Show correct answer information (diplay in a hidden floating box)
 	- Hide everything else
 	- Provide a next question option
 	- Display if you answered correctly or not
@@ -23,3 +23,4 @@ Create object
 	- properties of the question object - question content, answers
 	- constructor function
 
+Arrays - use array[#] to access values of the array
