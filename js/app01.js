@@ -36,24 +36,16 @@ imageDisplay();
 function imageDisplay(){
 	if (counter==0) {
 		$("#image1").fadeIn();
-		$("#image2").hide();
-		$("#image3").hide();
-		$("#image4").hide();
+		$("#image2, #image3, #image4").hide();
 	} else if (counter==1) {
-		$("#image1").hide();
 		$("#image2").fadeIn();
-		$("#image3").hide();
-		$("#image4").hide();
+		$("#image1, #image3, #image4").hide();
 	} else if (counter==2) {
-		$("#image1").hide();
-		$("#image2").hide();
 		$("#image3").fadeIn();
-		$("#image4").hide();
+		$("#image1, #image2, #image4").hide();
 	} else if (counter==3) {
-		$("#image1").hide();
-		$("#image2").hide();
-		$("#image3").hide();
 		$("#image4").fadeIn();
+		$("#image1, #image2, #image3").hide();
 	}
 }
 
@@ -104,11 +96,7 @@ $('#quiz-reset').click(function(){
 	location.reload();
 });
 
-
-$('.question-panel').fadeIn(900);
-$('.answer-panel').fadeIn(900);
-$('.image-box').slideDown(1200);
-$('.question-box').slideDown(1200);
-$('.ans').slideDown(1200);
+$('.question-panel, .answer-panel').fadeIn(900);
+$('.image-box, .question-box, .ans').slideDown(1200);
 
 });
