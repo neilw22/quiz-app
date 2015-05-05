@@ -1,7 +1,5 @@
 
 body {
-/*	background-color: lightgrey;
-*/
 	background-image: url("../images/spiral.jpeg");
 }
 
@@ -48,39 +46,35 @@ div {
 	margin-left: 3em;
 	width: 65%;
 	height: 40em;
-	background-color: #D3D1D4;
-	float: left;
+/*	background-color: #D3D1D4;
+*/	float: left;
+	background-image: url("../images/concrete_seamless.png");
 }
 
 .answer-panel {
 	display: none;
 	border: 1px solid;
-/*	margin: 5em auto;
-*/	margin-top: 8em;
+	margin-top: 8em;
 	margin-right: 3em;
 	width: 25%;
 	height: 28em;
-	background-color: #D3D1D4;
-	float: right;
+/*	background-color: #D3D1D4;
+*/	float: right;
+	background-image: url("../images/concrete_seamless.png");
 	}
 
 .ans {
 	display: none;
 }
 
-.ans :hover  {
-	background-color: white;
-	color: black;
-	cursor: pointer;
-}
-
 .image-box {
 	display: none;
 	border: 1px solid;
-	background-color: lightgrey;
-	margin: 2em auto;
+/*	background-color: lightgrey;
+*/	margin: 2em auto;
 	height: 70%;
 	max-width: 40em;
+	box-shadow: 0px 0px 100px #CDCED3;
 }
 
 .question-box {
@@ -106,6 +100,16 @@ div {
 	padding-left: 1em;
 }
 
+#answer1:hover,
+#answer2:hover,
+#answer3:hover,
+#answer4:hover{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+
+
 .answer {
 	display: none;
 	position: absolute;
@@ -114,8 +118,9 @@ div {
 	top: 25%;
 	float: left;
 	width: 50%;
-	height: 30em;
+	height: auto;
 	background-color: #100F0D;
+	background-image: url("../images/binding_dark.png");
 	color: #CDCED3;
 	box-shadow: 0px 0px 100px 0px rgba(255,255,255,1);
 	z-index: 99999;
@@ -130,7 +135,7 @@ div {
 	margin-top: 5em;
 }
 
-#answer-closer :hover{
+#answer-closer:hover{
 	background-color: white;
 	color: black;
 	cursor: pointer;
@@ -149,6 +154,12 @@ div {
 	display: none;
 }
 
+#quiz-reset:hover {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+
 /*Responsive Design*/
 
 @media screen and (max-width: 1050px) {
@@ -160,11 +171,25 @@ div {
 	}
 	.answer-panel {
 		margin-top: 2em;
-		height: 12em;
+		height: auto;
 	}
-	.ans {
-		display: inline-block;
+	.question-panel {
+		height: auto;
+	}
+	.image-box {
+		max-width: 95%;
+		height: auto;
+		border: none;
 	}
 }
 
+@media screen and (max-width: 1050px) {
+	
+	h1, h2 {
+		font-size: 1.25em;
+	}
+	#title {
+		text-align: center;
+	}
+}
 
